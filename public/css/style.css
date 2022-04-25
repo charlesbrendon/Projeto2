@@ -176,6 +176,7 @@ form {
   align-items: center;
 }
 form fieldset {
+  background-color: #fff;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -184,8 +185,12 @@ form fieldset {
 }
 legend {
   font-size: 32px;
+  background: red;
+  border-style: solid;
+  border-radius: 20px;
+  box-shadow: 5px 5px 5px #eee;  
+  
 }
-
 form fieldset fieldset {
   display: flex;
   flex-direction: row-reverse;
@@ -220,13 +225,23 @@ button:hover {
 }
 
 footer {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  bottom: 0;  
-  width: 100%;
-  text-align: center;  
-  height: 10vh;
-  background-color: #3b7bca;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    height: 10vh;
+    background-color: #3b7bca;
+}
+a {
+  display: block;
+  font-size: 1.5em;
+  margin-block-start: 0.83em;
+  margin-block-end: 0.83em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
 }
