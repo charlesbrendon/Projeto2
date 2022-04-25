@@ -169,7 +169,7 @@ section#cadastro {
 
 form {
     
-    display: flex;
+  display: flex;
   flex-direction: column;
   gap: 16px;
   width: 100%;
@@ -195,8 +195,10 @@ form fieldset fieldset {
   display: flex;
   flex-direction: row-reverse;
   gap: 16px;
-
   border: none;
+}
+::placeholder{
+  font-size: 0.6rem;
 }
 button {
   background: #3b7bca;

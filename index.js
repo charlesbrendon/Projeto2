@@ -64,7 +64,7 @@ let pokemons = [
         gender: ['Male','Female'],
         category: 'Lizard',
         abilites: 'Blaze',
-        type: 'Fire',
+        type: ['Fire'],
         weakness: ['Water', 'Ground', 'Rock'],
         image: 'https://assets.pokemon.com/assets/cms2/img/pokedex/full/004.png'
     },
@@ -77,7 +77,7 @@ let pokemons = [
         gender: 'Male' || 'Female',
         category: 'Flame',
         abilites: 'Blaze',
-        type: 'Fire',
+        type: ['Fire'],
         weakness: ['Water', 'Ground', 'Rock'],
         image:'https://assets.pokemon.com/assets/cms2/img/pokedex/full/005.png'
     }, 
@@ -124,8 +124,11 @@ app.get('/cadastro', (req, res) => {
 
 app.post('/cadastro',(req, res)=> {
     let id = pokemons[pokemons.length-1].id + 1
-    const {name, height, width, gender, category, abilites, weakness, type, image} = req.body
-    pokemons.push({id: id, name, height, width, gender, category, abilites, weakness, type, image})
+    console.log(req.body)
+    const {name, height, weight, gender, category, abilites, weakness1, type1, image} = req.body
+    const type = type1.split(', ')
+    const weakness = weakness1.split(', ')
+    pokemons.push({id: id, name, height, weight, gender, category, abilites, weakness, type, image})
     
     
     res.redirect('/')
