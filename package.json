@@ -8,7 +8,6 @@
   },
   "type": "module",
   "scripts": {
-    
     "start": "node index.js",
     "dev": "nodemon -e js,html,css,ejs"
   },
@@ -23,7 +22,7 @@
   },
   "homepage": "https://github.com/charlesbrendon/C013-M01-LAP/tree/main#readme",
   "dependencies": {
-    "ejs": "^3.1.6",
+    "ejs": "^3.1.7",
     "express": "^4.17.3"
   },
   "devDependencies": {
