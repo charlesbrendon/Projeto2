@@ -15,6 +15,6 @@ As ferramentas usadas para este projeto são:
 
 ## Contato
 
-<a href="https://www.linkedin.com/in/charles-suzart-851a9271/" target="blank_"> 
+<a href="https://www.linkedin.com/in/charles-suzart-851a9271/" target="_blank"> 
     <img src="https://img.icons8.com/cute-clipart/128/000000/linkedin.png"/>
 </a>
