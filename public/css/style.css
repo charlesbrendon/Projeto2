@@ -132,8 +132,10 @@ section#card {
 section#card div{
     border: 2px solid black;
 }
-img#img {  
+img#img {
   width: 300px;
+  border: solid 15px #e31515;
+  background-color: #fff;
 }
 
 table {
@@ -143,7 +145,7 @@ table {
   flex-direction: column;
   align-content: space-between;
   align-items: center;
-  
+  border-top: solid 2px black;
 }
 
 thead {
@@ -202,8 +204,8 @@ button {
   height: 50px;
   width: 150px;
   text-shadow: none;
+  align-self: center;
 }
-
 button:hover {
   background: #016abc;
   color: white;
