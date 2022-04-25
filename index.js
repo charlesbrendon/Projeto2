@@ -11,9 +11,9 @@ app.use(express.json()) // converter para json
 app.set("view engine", "ejs") // faz com que o express reconheça  o EJS como motor de visualização
 app.use(express.static(path.join(__dirname, "public")))
 
-const port = process.env.port || 3001;
+const PORT = process.env.PORT || 3001;
 
-app.listen(port, () => console.log(`Server in http://localhost:${port}`));  //lisente é uma funçao do express para criar um servidor
+app.listen(PORT, () => console.log(`Server in http://localhost:${PORT}`));  //lisente é uma funçao do express para criar um servidor
 
 
 let pokemons = [
